@@ -8,4 +8,5 @@ export const checkValidation = (email,password)=>{
     if(!passwordRegex.test(password)){
         return "Please enter a valid password";
     }
+    return null;
 }
