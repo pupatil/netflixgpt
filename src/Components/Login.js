@@ -44,7 +44,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          console.log("User signed up:", user);
           updateProfile(user, {
             displayName: fullname,
             photoURL:
@@ -62,7 +61,6 @@ const Login = () => {
                   userPhoto: user?.photoURL,
                 }),
               );
-              console.log("User profile updated successfully");
             })
             .catch((error) => {
               console.error("Error updating user profile:", error);

@@ -11,6 +11,7 @@
    - Integrated sign-in and sign-out functionality using Firebase Authentication.
    - Created a Redux store with a user slice.
    - Implemented sign-out functionality and user profile updates.
+    Bug- 
    - Started building the movie list page.
    - Integrated the TMDB API to fetch movie data.
 
