@@ -22,7 +22,6 @@ const movieSlice = createSlice({
         addTrailer:(state,action)=>{
             state.trailerId= action.payload 
         }
-
     }
 })
 

@@ -7,7 +7,6 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
 const Login = () => {
@@ -18,7 +17,6 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleSignIn = () => {
     // Sign in logic here
@@ -94,7 +92,7 @@ const Login = () => {
   return (
     <div>
       <Header></Header>
-      <div className="absolute top-0 left-0 w-full h-screen">
+      <div className="absolute -z-10">
         <img
           src="https://assets.nflxext.com/ffe/siteui/vlv3/ea534f76-b87f-4720-9605-cb29cfd9fefe/web/IN-en-20260810-TRIFECTA-perspective_5a83c581-2878-466b-87a0-19d0bf50f4bc_large.jpg"
           alt="Netflix Background"
